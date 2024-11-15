@@ -7,7 +7,7 @@
 *{
     margin: 0px;
     padding: opx;
-
+    text-indent: 10px;
 }
 
 :root{
@@ -72,6 +72,7 @@ font-size: 2vw;
     max-width: 1080px;
     max-height: 450px;
     margin-top: 0px;
+  
     }
 
     #inicial{
@@ -115,6 +116,59 @@ font-variant: small-caps;
    }
 background-color: var(--cor2);
    }
+
+   #introducao{
+    background-color: var(--cor2);
+    padding: 20px;
+    text-align: justify;
+    font-family: var(--fonte2);
+    font-variant: small-caps;
+    font-size: 1.2em;
+    word-spacing: 0.5px;
+    
+   }
+
+   .machado{
+    background-color: var(--cor2);
+   }
+
+   .machado > h4{
+    font-family: var(--fonte1);
+    font-variant: small-caps;
+    font-size: 1.7em;
+  padding: 30px;
+  color: var(--cor1);
+  text-shadow: 1px 1px 10px black;
+   }
+.machado > p{
+    font-family: var(--fonte2);
+    font-variant: small-caps;
+    font-size: 1.2em;
+    text-align: justify;
+    word-spacing: 0.5px;
+    line-height: 1.5em;
+    padding: 30px;
+    color: var(--cor1);
+    text-shadow: 1px 1px 10px black;
+}
+
+.machado  a{
+    color: var(--cor1);
+    text-decoration: none;
+}
+.machado a:hover{
+    text-decoration: underline var(--cor1);
+}
+
+#machado{
+    background-image: url(machado.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    box-shadow: inset 20px 20px 20px black;
+
+}
   
 
 
