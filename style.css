@@ -66,13 +66,56 @@ border-width: 2px;
 font-size: 2vw;
 }
 
-#img1{
-    width: 100%;
-max-width: 1050px;
-max-height: 450px;
 
+    #img1{
+        width: 100%;
+    max-width: 1080px;
+    max-height: 450px;
+    margin-top: 0px;
+    }
 
-}
+    #inicial{
+        font-family: var(--fonte2);
+        font-size: 1em;
+        text-align: justify;
+        color: var(--cor1);
+        background-color: var(--cor4);
+        padding: 20px;
+        margin: 0px;
+       box-shadow: 1px 1px 10px rgb(0, 0, 0);
+font-variant: small-caps;
+    }
+   
+   ul.custon{
+    list-style-type:disc;
+   margin: auto;
+   
+   }
+
+   ul.custon > li{
+margin-bottom: 10px;
+font-family: var(--fonte2);
+font-size: 1em;
+font-variant: small-caps;
+
+   }
+
+   ul.custon > li::marker{
+    color: var(--cor4);
+   }
+
+   #beneficios{
+    font-family: var(--fonte1);
+    
+   padding: 20px;
+   p{
+    margin-bottom: 15px;
+    font-size: 1.7em;
+    font-variant: small-caps;
+   }
+background-color: var(--cor2);
+   }
+  
 
 
 
