@@ -163,10 +163,10 @@ background-color: var(--cor2);
 #machado{
     background-image: url(machado.jpeg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
     background-position: center center;
     background-attachment: fixed;
-    box-shadow: inset 20px 20px 20px black;
+    box-shadow: inset 1px 1px 1px 1000px rgba(0, 0, 0, 0.591);
 
 }
   
