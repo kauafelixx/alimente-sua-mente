@@ -1,416 +1,208 @@
 @charset "'UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap");
 
 * {
-    margin: 0px;
-    padding: opx;
-    text-indent: 10px;
-}
-
-body{
-    background-color: var(--cor2);
+  margin: 0px;
+  padding: 0px;
+  font-family: var(--fonte3);
+  box-sizing: border-box;
 }
 
 :root {
-    --cor1: #F2F2F2;
-    --cor2: #D9D9D9;
-    --cor3: #8C8C8C;
-    --cor4: #595959;
-    --cor5: #262626;
+  --cor1: #f2f2f2;
+  --cor2: #d9d9d9;
+  --cor3: #8c8c8c;
+  --cor4: #595959;
+  --cor5: #262626;
 
+  --fonte1: "Passion One", sans-serif;
 
-
-    --fonte1: "Passion One", sans-serif;
-    --fonte2: "Sriracha", cursive;
-    --fonte3: Arial, Helvetica, sans-serif;
+  --fonte3: Arial, Helvetica, sans-serif;
+}
+body {
+    background-image: url(images/folha.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  background-color: var(--cor1);
+  height: 100vh;
+  display: flex;
+  overflow-x: hidden;
+  flex-direction: column;
+  align-items: center;
+}
+.all-elements {
+background: #f2f2f2e3;
+  width: 100%;
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+box-shadow: 50px 50px 100px rgba(0, 0, 0, 0.548);
 }
 
-header {
-    background-color: var(--cor5);
-    height: 16vw;
-}
-
-header>h1 {
-    font-family: var(--fonte1);
-    color: var(--cor1);
-    text-align: center;
-    padding: 20px;
-    font-variant: small-caps;
-    letter-spacing: 2px;
-    font-size: 8vw;
-}
-
-nav {
-    background-color: var(--cor4);
-    padding: 5px;
-    height: 5vw;
-    text-align: center;
-}
-
-nav>a {
-    color: var(--cor1);
-    padding: 5px;
-     font-family: var(--fonte3);
-   font-size: 2vw;
- transition: 1s ease; 
-text-decoration: none;
-}
-
-nav>a:hover {
-    background-color: var(--cor1);
-    color: var(--cor5);
-    text-decoration: underline;
-border-radius: 5px;
-}
-
-
-#img1 {
+header{
     width: 100%;
-    max-width: 1080px;
-    max-height: 450px;
-    margin-top: 0px;
-
-}
-
-#inicial {
-    font-family: var(--fonte2);
-    font-size: 1em;
-    text-align: justify;
-    color: var(--cor1);
-    background-color: var(--cor4);
-    padding: 20px;
-    margin: 0px;
-    box-shadow: 1px 1px 10px rgb(0, 0, 0);
-    font-variant: small-caps;
-}
-
-ul.custon {
-    list-style-type: disc;
-    margin: auto;
-
-}
-
-ul.custon>li {
-    margin-bottom: 10px;
-    font-family: var(--fonte2);
-    font-size: 1em;
-    font-variant: small-caps;
-
-}
-
-ul.custon>li::marker {
-    color: var(--cor4);
-}
-
-#beneficios {
-    font-family: var(--fonte1);
-
-    padding: 20px;
-
-    p {
-        margin-bottom: 15px;
-        font-size: 1.7em;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h1{
+        font-family: var(--fonte1);
+        color: var(--cor5);
+        font-size: 3em;
+        margin: 20px 0;
         font-variant: small-caps;
     }
-
-    background-color: var(--cor2);
 }
 
-#introducao {
-    background-color: var(--cor2);
+
+.introduction{
+   
     padding: 20px;
-    text-align: justify;
-    font-family: var(--fonte2);
-    font-variant: small-caps;
-    font-size: 1.2em;
-    word-spacing: 0.5px;
-
-}
-
-
-
-
-.machado {
-    background-color: var(--cor2);
-  
-}
-
-.machado>h4 {
-    font-family: var(--fonte1);
-    font-variant: small-caps;
-    font-size: 1.7em;
-    padding: 30px;
-    color: var(--cor1);
-    text-shadow: 1px 1px 10px black;
-}
-
-.machado>p {
-    font-family: var(--fonte2);
-    font-variant: small-caps;
-    font-size: 1.2em;
-    text-align: justify;
-    word-spacing: 0.5px;
-    line-height: 1.5em;
-    padding: 30px;
-    color: var(--cor1);
-    text-shadow: 1px 1px 10px black;
-}
-
-.machado a {
-    color: var(--cor1);
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.machado a:hover {
-    text-decoration: underline var(--cor1);
-}
-
-#machado {
-    background-image: url(machado.jpeg);
+    background-image: url(inicio.jpg) ;
+    background-position: center;
+    background-size: cover;
     background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-position: center center;
-    background-attachment: fixed;
-    box-shadow: inset 1px 1px 1px 1000px rgba(0, 0, 0, 0.4);
+
+    p{
+        font-family: var(--fonte3);
+        color: var(--cor1);
+font-size: .9em;
+        text-align: justify;
+        background-color: #595959c2;
+        padding: 20px;
+        border-radius: 8px;
+        line-height: 1.6em;
+        margin: 20px 0;
+    }
 }
 
+.all{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+border-radius: 8px;
 
+height: 550px;
+margin-top: 10px;
 
+    h4{
+    margin-top: 8px;
+    margin-left: 10px;
+        font-variant: small-caps;
+        font-size: 1.1em;
+    }
 
+    p{
 
+        font-family: var(--fonte3);
+        color: var(--cor5);
+        font-size: .9em;
+        text-align: justify;
+        line-height: 1.8em;
+        padding: 10px;
+    }
+    a{
+        text-decoration: none;
+        color: var(--cor5);
+        font-size: .9em;
+        font-weight: bold;
+        margin: 10px;
+        padding: 10px;
+        border-radius: 8px;
+      
+        transition: .3s;
+        &:hover{
+           font-size: 1em;
+        }
+    }
 
+    .img-top{
+        background-color: aqua;
+        height: 300px;
+        width: 100%;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        box-shadow: inset 2px 2px 5px #333;
+    }
 
-
-.clarice {
-    background-color: var(--cor2);
- 
+.machado{
+    background-image: url(images/machado-de-assis.jpeg);
 }
-
-.clarice>h4 {
-    font-family: var(--fonte1);
-    font-variant: small-caps;
-    font-size: 1.7em;
-    padding: 30px;
-    color: var(--cor1);
-    text-shadow: 1px 1px 10px black;
+.clarice{
+    background: url(images/clarice-lispector.jpeg);
+    background-position: center; 
 }
-
-.clarice>p {
-    font-family: var(--fonte2);
-    font-variant: small-caps;
-    font-size: 1.2em;
-    text-align: justify;
-    word-spacing: 0.5px;
-    line-height: 1.5em;
-    padding: 30px;
-    color: var(--cor1);
-    text-shadow: 1px 1px 10px black;
-}
-
-.clarice a {
-    color: var(--cor1);
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.clarice a:hover {
-    text-decoration: underline var(--cor1);
-}
-
-#clarice {
-    background-image: url(clarice.jpeg);
+.jorge{
+    background: url(images/jorge-amado.jpeg);
+    background-position: center; 
     background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-position: center center;
-    background-attachment: fixed;
-    box-shadow: inset 1px 1px 1px 1000px rgba(0, 0, 0, 0.4);
+    background-size: cover;
 }
-
-
-
-
-
-
-.jorge {
-    background-color: var(--cor2);
-}
-
-.jorge>h4 {
-    font-family: var(--fonte1);
-    font-variant: small-caps;
-    font-size: 1.7em;
-    padding: 30px;
-    color: var(--cor1);
-    text-shadow: 1px 1px 10px black;
-}
-
-.jorge>p {
-    font-family: var(--fonte2);
-    font-variant: small-caps;
-    font-size: 1.2em;
-    text-align: justify;
-    word-spacing: 0.5px;
-    line-height: 1.5em;
-    padding: 30px;
-    color: var(--cor1);
-    text-shadow: 1px 1px 10px black;
-}
-
-.jorge a {
-    color: var(--cor1);
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.jorge a:hover {
-    text-decoration: underline var(--cor1);
-}
-
-#jorge {
-    background-image: url(jorge.jpeg);
+.euclides{
+    background: url(images/euclides-da-cunha.jpeg);
+    background-position: center; 
     background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-position: center center;
-    background-attachment: fixed;
-    box-shadow: inset 1px 1px 1px 1000px rgba(0, 0, 0, 0.4);
+    background-size: cover;
 }
 
-
-
-
-
-.euclides {
-    background-color: var(--cor2);
-}
-
-.euclides>h4 {
-    font-family: var(--fonte1);
-    font-variant: small-caps;
-    font-size: 1.7em;
-    padding: 30px;
-    color: var(--cor1);
-    text-shadow: 1px 1px 10px black;
-}
-
-.euclides>p {
-    font-family: var(--fonte2);
-    font-variant: small-caps;
-    font-size: 1.2em;
-    text-align: justify;
-    word-spacing: 0.5px;
-    line-height: 1.5em;
-    padding: 30px;
-    color: var(--cor1);
-    text-shadow: 1px 1px 10px black;
-}
-
-.euclides a {
-    color: var(--cor1);
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.euclides a:hover {
-    text-decoration: underline var(--cor1);
-}
-
-#euclides {
-    background-image: url(euclides.jpeg);
+.paulo{
+    background: url(images/paulo-coelho.jpeg);
+    background-position: center; 
     background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-position: center center;
-    background-attachment: fixed;
-    box-shadow: inset 1px 1px 1px 1000px rgba(0, 0, 0, 0.4);
+    background-size: cover;
+    box-shadow: inset 2px 2px 5px #333;
 }
 
-
-
-
-
-.paulo {
-    background-color: var(--cor2);
-}
-
-.paulo>h4 {
-    font-family: var(--fonte1);
-    font-variant: small-caps;
-    font-size: 1.7em;
-    padding: 30px;
-    color: var(--cor1);
-    text-shadow: 1px 1px 10px black;
-}
-
-.paulo>p {
-    font-family: var(--fonte2);
-    font-variant: small-caps;
-    font-size: 1.2em;
-    text-align: justify;
-    word-spacing: 0.5px;
-    line-height: 1.5em;
-    padding: 30px;
-    color: var(--cor1);
-    text-shadow: 1px 1px 10px black;
-}
-
-.paulo a {
-    color: var(--cor1);
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.paulo a:hover {
-    text-decoration: underline var(--cor1);
-}
-
-#paulo {
-    background-image: url(paulo.jpeg);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-position: center center;
-    background-attachment: fixed;
-    box-shadow: inset 1px 1px 1px 1000px rgba(0, 0, 0, 0.4);
-}
-
-
-hr{
-    background-color: var(--cor5);
-    box-shadow: 30px 30px 60px black ;
-    height: 10px;
-    border: none;
 }
 
 footer{
-    background-color: var(--cor5);
-    padding: 20px;
-    text-align: center;
-}
-footer p{
-    color: var(--cor1);
-    font-family: var(--fonte3);
-    font-variant: small-caps;
-    font-size: 1em;
-    margin-bottom: 5px;
-}
-footer a{
-    color: var(--cor1);
-   padding: 5px;
-    text-decoration: none;
-    font-family: var(--fonte3);
-    font-size: 0.9em;
-transition: 1s ease;
-}
-
-footer a:hover{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: var(--cor1);
     color: var(--cor5);
-    text-decoration: underline;
-border-radius: 5px;
+    font-size: .9em;
+    p{
+        font-family: var(--fonte3);
+        font-size: .9em;
+    }
+
+    nav{
+        display: flex;
+        flex-direction: row;
+        margin-top: 10px;
+
+        img{
+            width: 30px;
+            margin-right: 10px;
+            height: 30px;
+            transition: .3s;
+
+            &:hover{
+                width: 35px;
+                height: 35px;
+            }
+        }
+    }
+
+    strong{
+        font-size: 1.1em;
+
+        transition: .3s;
+        &:hover{
+            font-size: 1.2em;
+            text-decoration: underline;
+        }
+     
+    }
+
 }
-
-
-
-
